@@ -45,7 +45,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
+                    android:text="Boy Handsome"
                     android:id="@+id/btnMale"
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
@@ -55,11 +55,12 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Female"
-                    android:id="@+id/btnFemale"
+                    android:text="Old"
+                    android:id="@+id/btnOld"
+                    android:layout_below="@+id/btnYoung"
+                    android:layout_alignParentLeft="true"
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
-                    android:layout_alignParentTop="true"
                     android:layout_margin="4dp"/>
 
                 <Button
@@ -94,6 +95,16 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Hot Girl"
+                    android:id="@+id/btnFemale"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Young"
                     android:id="@+id/btnYoung"
                     android:layout_below="@+id/btnThirdGender"
@@ -101,16 +112,6 @@
                     android:textColor="@color/color_text_favo"
                     android:layout_margin="4dp"/>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Old"
-                    android:id="@+id/btnOld"
-                    android:layout_below="@+id/btnYoung"
-                    android:layout_alignParentLeft="true"
-                    android:background="@drawable/favo_not_select"
-                    android:textColor="@color/color_text_favo"
-                    android:layout_margin="4dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -250,7 +251,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="White"
+                    android:text="Sky"
                     android:id="@+id/btnWhite"
                     android:layout_above="@+id/btnAmbition"
                     android:background="@drawable/favo_not_select"

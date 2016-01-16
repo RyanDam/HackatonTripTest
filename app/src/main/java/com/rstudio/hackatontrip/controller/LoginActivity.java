@@ -29,6 +29,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // check if logged
+        ParseUser user = ParseUser.getCurrentUser();
+        if (user != null) {
+            Intent intent = new Intent(this, ShowActivity.class);
+            startActivity(intent);
+            Log.d("LOGIN", "user have logged");
+        }
+
         init();
     }
 

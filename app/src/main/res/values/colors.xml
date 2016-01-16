@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#1e2734</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Login-->
+    <color name="color_mask_login">#a0000e16</color>
+    <color name="color_text_description">#ffffff</color>
+    <color name="color_text_login">#fc558c</color>
+    <color name="color_hint_login">#ff8ab1</color>
+
+    <color name="color_field_back">#ffffff</color>
+
+    <color name="color_new_accout">#1fff8f</color>
+
+    <color name="color_text_favo">#ffffff</color>
+
+    <!--Show Activity-->
+    <color name="color_back_card">#48ffffff</color>
+
 </resources>

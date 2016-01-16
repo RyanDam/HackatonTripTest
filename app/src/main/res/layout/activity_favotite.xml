@@ -3,91 +3,287 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rstudio.hackatontrip.controller.FavotiteActivity">
 
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView4"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_mask_login" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top">
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Choose your habits:"
+            android:id="@+id/textView3"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/color_text_favo"
+            android:textSize="20dp" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_gravity="center_horizontal">
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Male"
+                    android:id="@+id/btnMale"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="4dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Female"
+                    android:id="@+id/btnFemale"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Third Gender"
+                    android:id="@+id/btnThirdGender"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_below="@+id/btnMale"
+                    android:layout_margin="4dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="MiddleAge"
+                    android:id="@+id/btnMidAge"
+                    android:layout_alignTop="@+id/btnFemale"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Young"
+                    android:id="@+id/btnYoung"
+                    android:layout_below="@+id/btnThirdGender"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Old"
+                    android:id="@+id/btnOld"
+                    android:layout_below="@+id/btnYoung"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Science"
+                    android:id="@+id/btnScience"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnOld"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Economy"
+                    android:id="@+id/btnEconomy"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnScience"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Sad"
+                    android:id="@+id/btnSad"
+                    android:layout_below="@+id/btnSport"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button2"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/button"
-                android:layout_toEndOf="@+id/button" />
+                android:layout_gravity="center_horizontal" >
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button3"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/button2"
-                android:layout_toEndOf="@+id/button2" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Food"
+                    android:id="@+id/btnFood"
+                    android:layout_below="@+id/btnSport"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button4"
-                android:layout_below="@+id/button"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Sport"
+                    android:id="@+id/btnSport"
+                    android:layout_below="@+id/btnMidAge"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button5"
-                android:layout_below="@+id/button"
-                android:layout_toRightOf="@+id/button"
-                android:layout_toEndOf="@+id/button" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Education"
+                    android:id="@+id/btnEducation"
+                    android:layout_below="@+id/btnFemale"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button6"
-                android:layout_below="@+id/button2"
-                android:layout_toRightOf="@+id/button2"
-                android:layout_toEndOf="@+id/button2" />
-        </RelativeLayout>
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Funny"
+                    android:id="@+id/btnFunny"
+                    android:layout_below="@+id/btnEconomy"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Ambition"
+                    android:id="@+id/btnAmbition"
+                    android:layout_alignBaseline="@+id/btnScience"
+                    android:layout_alignBottom="@+id/btnScience"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Chatterbox"
+                    android:id="@+id/btnChatterbox"
+                    android:layout_below="@+id/btnRed"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Red"
+                    android:id="@+id/btnRed"
+                    android:layout_below="@+id/btnBlack"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="White"
+                    android:id="@+id/btnWhite"
+                    android:layout_above="@+id/btnAmbition"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Blue"
+                    android:id="@+id/btnBlue"
+                    android:layout_below="@+id/btnSad"
+                    android:background="@drawable/favo_not_select"
+                    android:textColor="@color/color_text_favo"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
             android:text="DONE"
-            android:id="@+id/button7"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/btnDone"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_red"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
 
     </LinearLayout>
 

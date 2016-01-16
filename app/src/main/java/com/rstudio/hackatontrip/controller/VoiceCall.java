@@ -166,13 +166,16 @@ public class VoiceCall {
             @Override
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
-                if (answer == true){
-                    call.answer();
-                    call.addCallListener(new SinchCallListener());
-                }else {
-                    call.hangup();
+                if (call != null) {
+                    if (answer == true) {
+                        call.answer();
+                        call.addCallListener(new SinchCallListener());
+                    } else {
+                        call.hangup();
+                    }
+                    resetState();
                 }
-                resetState();
+
             }
         }
     }

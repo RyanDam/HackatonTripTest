@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.parse.ParseUser;
 import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
 import com.rstudio.hackatontrip.view.behaviour.OnSwipeListener;
@@ -13,11 +14,20 @@ import com.rstudio.hackatontrip.view.behaviour.OnSwipeListener;
 public class ShowActivity extends AppCompatActivity {
 
     private ImageView mainImg;
+    private String userId;
+    private VoiceCall call;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
+
+        userId = ParseUser.getCurrentUser().getObjectId();
+
+        call = new VoiceCall(this,userId);
+
+        call.listeningCall();
+
         mainImg = (ImageView) findViewById(R.id.main_img);
         mainImg.setOnTouchListener(new OnSwipeListener(this) {
             public void onSwipeRight() {
@@ -42,6 +52,8 @@ public class ShowActivity extends AppCompatActivity {
                 nextUser();
             }
         });
+
+
     }
 
     private void nextUser() {
@@ -55,6 +67,8 @@ public class ShowActivity extends AppCompatActivity {
 
     private void makeACall() {
         // make a dirrect call to that user
+        String recipientId = "";
+        call.callUser(recipientId);
     }
 
 }

@@ -2,6 +2,7 @@ package com.rstudio.hackatontrip.controller;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.AsyncTask;
 import android.os.SystemClock;
 import android.util.Log;
@@ -52,13 +53,14 @@ public class VoiceCall {
                 .build();
 
         sinchClient.setSupportCalling(true);
-        sinchClient.start();
+
     }
 
 
     //Listen for incoming call
     public void listeningCall(){
         sinchClient.startListeningOnActiveConnection();
+        sinchClient.start();
         sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());
     }
 
@@ -87,11 +89,12 @@ public class VoiceCall {
     }
 
     public void pickupCall(){
-        this.answer = true;
+        call.answer();
+        call.addCallListener(new SinchCallListener());
     }
 
     public void rejectCall(){
-        this.reject = true;
+        call.hangup();
     }
 
 
@@ -109,16 +112,18 @@ public class VoiceCall {
         @Override
         public void onCallProgressing(Call call) {
             callState = "RINGING";
+            Log.d("Test",callState);
         }
 
         @Override
         public void onCallEstablished(Call call) {
             callState = "CONNECTED";
+            Log.d("Test",callState);
         }
 
         @Override
         public void onCallEnded(Call endCall) {
-            Log.d("VoiceCall","CallEnded");
+            Log.d("Test","CallEnded");
             call = null;
         }
 
@@ -137,7 +142,7 @@ public class VoiceCall {
         @Override
         public void onIncomingCall(CallClient callClient, Call incomingCall) {
             call = incomingCall;
-            CallTask callTask = new CallTask();
+            //CallTask callTask = new CallTask();
 
             //Start activity IncomingCall
             InComingCallActivity.call = voiceCall;
@@ -145,7 +150,7 @@ public class VoiceCall {
             context.startActivity(i);
 
             //Waiting for answer
-            callTask.execute(maxSecond);
+            //callTask.execute(maxSecond);
         }
 
 
@@ -175,6 +180,8 @@ public class VoiceCall {
                     }
                     resetState();
                 }
+                else
+                    resetState();
 
             }
         }

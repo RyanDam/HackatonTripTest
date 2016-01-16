@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Email"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:textColor="@color/color_text_description" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/field_height"
         android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/user_email" />
+        android:id="@+id/user_email"
+        android:textColor="@color/color_text_login"
+        android:textColorHint="@color/color_hint_login"
+        android:hint="@string/login_username_hint"
+        android:background="@drawable/field_bg"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="14dp"
+        android:typeface="normal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/Password" />
+        android:text="Password"
+        android:textColor="@color/color_text_description" />
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/field_height"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/user_pass" />
+        android:id="@+id/user_pass"
+        android:textColor="@color/color_text_login"
+        android:textColorHint="@color/color_hint_login"
+        android:hint="@string/login_password_hint"
+        android:background="@drawable/field_bg"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="14dp"
+        android:typeface="normal" />
 </LinearLayout>

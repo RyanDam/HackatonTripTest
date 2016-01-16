@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:id="@+id/imageView"
+            android:id="@+id/main_img"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/ic_launcher" />
 
@@ -35,14 +35,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="OK"
-                android:id="@+id/button8" />
+                android:id="@+id/ok_bt" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NEXT"
-                android:id="@+id/button9" />
+                android:id="@+id/next_bt" />
         </LinearLayout>
 
     </LinearLayout>

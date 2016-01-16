@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Ryan/AndroidStudioProjects/HackatonTripTest/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="/Users/Ryan/AndroidStudioProjects/HackatonTripTest/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.1.1_3da9c746f0d79ad4ade999efd60dd9c399aededc.jar" />
+    </item>
+
+</items>

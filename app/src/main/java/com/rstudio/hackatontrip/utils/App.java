@@ -2,6 +2,8 @@ package com.rstudio.hackatontrip.utils;
 
 import android.app.Application;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
 import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
 

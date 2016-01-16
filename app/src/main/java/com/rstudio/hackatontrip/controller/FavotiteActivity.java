@@ -115,7 +115,7 @@ public class FavotiteActivity extends AppCompatActivity {
         String up="";
         for (int i=0; i<_array.size(); i++){
 
-            up=up+String.valueOf(i)+_array.get(i)+";";
+            up=up+_array.get(i)+";";
         }
         return up;
     }

@@ -1,8 +1,7 @@
 package com.rstudio.hackatontrip.controller;
 
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -101,10 +100,10 @@ public class FavotiteActivity extends AppCompatActivity {
                     int check =haveItInArray((String) temp.getText());
                     if (check!=-1){
                         _array.remove(check);
-                        changeColor(temp, Color.WHITE);
+                        changeColor(temp, R.drawable.favo_not_select);
                     }else{
                         _array.add(temp.getText().toString());
-                        changeColor(temp, Color.BLUE);
+                        changeColor(temp, R.drawable.favo_selected);
                     }
                 }
 
@@ -112,8 +111,12 @@ public class FavotiteActivity extends AppCompatActivity {
         });
     }
 
-    public void changeColor(final Button b1, int color){
-        b1.setBackgroundColor(color);
+    public void changeColor(final Button b1, int id){
+        //b1.setBackgroundColor(color);
+        b1.setBackgroundResource(id);
+
+
+        //b1.setBackground(getResources().getDrawable(R.drawable.favo_selected));
     }
 
     public void handleDone (){

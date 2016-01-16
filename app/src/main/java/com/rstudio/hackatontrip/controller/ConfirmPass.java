@@ -1,5 +1,7 @@
 package com.rstudio.hackatontrip.controller;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import com.parse.ParseException;
 import com.parse.SignUpCallback;
 import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
+import com.rstudio.hackatontrip.utils.AlertWarning;
 
 public class ConfirmPass extends AppCompatActivity {
 
@@ -53,12 +56,12 @@ public class ConfirmPass extends AppCompatActivity {
                                 Intent intent = new Intent(ConfirmPass.this, FavotiteActivity.class);
                                 startActivity(intent);
                             } else {
-                                Toast.makeText(ConfirmPass.this,"Some error occur", Toast.LENGTH_LONG).show();
+                                AlertWarning.showAlert(ConfirmPass.this, "Fail", "Some error occur");
                             }
                         }
                     });
                 } else {
-                    Toast.makeText(ConfirmPass.this, "Password Confirm not match", Toast.LENGTH_LONG).show();
+                    AlertWarning.showAlert(ConfirmPass.this, "Fail", "Password Confirm not match");
                 }
             }
         });

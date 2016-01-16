@@ -2,15 +2,10 @@ package com.rstudio.hackatontrip.controller;
 
 import android.content.Context;
 import android.content.Intent;
-<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-=======
 import android.media.AudioManager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
->>>>>>> master
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -51,20 +46,16 @@ import java.util.Objects;
 
 public class ShowActivity extends AppCompatActivity {
 
-<<<<<<< HEAD
     private Context mContext;
 
     private ImageView mainImg;
-    private String userId;
     private ParseUser currentUser;
     private ParseUser currentTargetUser;
     private VoiceCall call;
     private ProgressBar mainProgess;
     private ArrayList<String> previousUser;
-=======
     public static final int CALL_CODE = 5646;
     public static final int HANGUP_CODE = 2232;
-    private ImageView mainImg;
     private String userId;
     private VoiceCall voiceCall;
     List<String> listRecentCall;
@@ -76,7 +67,6 @@ public class ShowActivity extends AppCompatActivity {
     private Call mCall;
 
     public static final String KEY_ONLINE = "isOnline";
->>>>>>> master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,14 +76,12 @@ public class ShowActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         mContext = this;
 
-
-<<<<<<< HEAD
         previousUser = new ArrayList<>();
 
         currentUser = ParseUser.getCurrentUser();
 
         userId = currentUser.getObjectId();
-=======
+
         listRecentCall = new ArrayList<String>();
         ParseUser user = ParseUser.getCurrentUser();
         userId = user.getObjectId();
@@ -102,7 +90,6 @@ public class ShowActivity extends AppCompatActivity {
         user.saveInBackground();
 
         userId = "xyz";
->>>>>>> master
 
         voiceCall = new VoiceCall(userId,this);
 
@@ -188,6 +175,8 @@ public class ShowActivity extends AppCompatActivity {
     private void resetUser(ParseUser u) {
         Log.d("Current Target", "" + u.getObjectId());
         ParseFile img = (ParseFile) u.get("avatar");
+        userId = u.getObjectId();
+        voiceCall = new VoiceCall(userId,this);
         img.getDataInBackground(new GetDataCallback() {
             @Override
             public void done(byte[] data, ParseException e) {
@@ -210,16 +199,11 @@ public class ShowActivity extends AppCompatActivity {
         voiceCall.callUser(recipientId);
     }
 
-<<<<<<< HEAD
     @Override
     public void onBackPressed() {
         setResult(LoginActivity.EXIT_CODE, new Intent());
         finish();
     }
-<<<<<<< HEAD
-=======
-
-=======
 
     public class VoiceCall{
         private Call call;
@@ -284,6 +268,4 @@ public class ShowActivity extends AppCompatActivity {
                     break;
         }
     }
->>>>>>> origin/An
->>>>>>> master
 }

@@ -30,7 +30,6 @@
         </activity>
         <activity
             android:name=".controller.ShowActivity"
-<<<<<<< HEAD
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeMain" />
         <activity
@@ -42,23 +41,15 @@
         <activity
             android:name=".controller.ConfirmPass"
             android:screenOrientation="portrait" />
-        <activity android:name=".controller.UserActivity"></activity>
-=======
-            android:theme="@style/AppThemeMain"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".controller.RegisterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".controller.FavotiteActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".controller.ConfirmPass"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".controller.UserActivity">
+
+        </activity>
         <activity android:name=".controller.InComingCallActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity android:name=".controller.CallingActivity"
             android:screenOrientation="portrait">
         </activity>
->>>>>>> master
     </application>
 
 </manifest>

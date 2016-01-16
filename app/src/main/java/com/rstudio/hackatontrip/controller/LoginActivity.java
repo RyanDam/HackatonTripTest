@@ -1,6 +1,8 @@
 package com.rstudio.hackatontrip.controller;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -18,6 +20,7 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
+import com.rstudio.hackatontrip.utils.AlertWarning;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -37,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!LoginActivity.this.checkConnection()) {
-                    Toast.makeText(LoginActivity.this, "Check your connection", Toast.LENGTH_SHORT).show();
+                    AlertWarning.showAlert(LoginActivity.this, "Fail", "Check your connection");
                 } else {
                     String username = ((EditText)findViewById(R.id.user_email)).getText().toString();
                     String password = ((EditText)findViewById(R.id.user_pass)).getText().toString();
@@ -50,8 +53,9 @@ public class LoginActivity extends AppCompatActivity {
                                 Intent intent = new Intent(LoginActivity.this, ShowActivity.class);
                                 startActivity(intent);
                                 Log.d("LOGIN", "done");
-                            } else
-                                Toast.makeText(LoginActivity.this, "Invalid username/password", Toast.LENGTH_LONG).show();
+                            } else {
+                                AlertWarning.showAlert(LoginActivity.this, "Fail", "Invalid username/password");
+                            }
                         }
                     });
                 }

@@ -28,9 +28,16 @@ public class User extends ParseUser {
     public static boolean validate(String username , String password) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(username);
         boolean emailValid =  matcher.find();
-        boolean usernameValid = (username != null && username.length() > 6);
-        boolean passwordValid = (password != null && password.length() > 6);
-        return emailValid && usernameValid && passwordValid;
+        boolean passwordValid = (password.compareTo("") != 0 && password.length() > 5);
+        return emailValid && passwordValid;
     }
 
+    public  static boolean validatePassword(String password) {
+        return (password.compareTo("") != 0 && password.length() > 5);
+    }
+
+    public static boolean validateUsername(String username) {
+        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(username);
+        return matcher.find();
+    }
 }

@@ -1,6 +1,8 @@
 package com.rstudio.hackatontrip.controller;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -20,6 +22,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
+import com.rstudio.hackatontrip.utils.AlertWarning;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,18 +46,19 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!RegisterActivity.this.checkConnection()) {
-                    Toast.makeText(RegisterActivity.this, "Check your connection", Toast.LENGTH_SHORT).show();
+                    AlertWarning.showAlert(RegisterActivity.this, "Fail", "Check your connection");
                 } else {
                     final String username = ((EditText)findViewById(R.id.user_email)).getText().toString();
                     final String password = ((EditText)findViewById(R.id.user_pass)).getText().toString();
                     if (User.validate(username, password)) {
                         // check email exist
-                        ParseQuery<User> query = ParseQuery.getQuery(User.class);
-                        query.whereEqualTo(USERNAME_KEY, username);
+                        ParseQuery<ParseUser> query = User.getQuery();
 
-                        query.findInBackground(new FindCallback<User>() {
+                        query.whereEqualTo("email", username);
+
+                        query.findInBackground(new FindCallback<ParseUser>() {
                             @Override
-                            public void done(List<User> objects, ParseException e) {
+                            public void done(List<ParseUser> objects, ParseException e) {
                                 if (objects.size() == 0) {
                                     Log.d("SIZE", objects.size() + "");
                                     Intent intent = new Intent(RegisterActivity.this, ConfirmPass.class);
@@ -66,10 +70,15 @@ public class RegisterActivity extends AppCompatActivity {
 
                                     startActivity(intent);
                                 } else {
-                                    Toast.makeText(RegisterActivity.this, "Email is exist", Toast.LENGTH_LONG).show();
+                                    AlertWarning.showAlert(RegisterActivity.this, "Fail", "Email is exist");
                                 }
                             }
                         });
+                    } else {
+                        if (!User.validateUsername(username))
+                            AlertWarning.showAlert(RegisterActivity.this, "Fail", "Email is not valid");
+                        else if (!User.validatePassword(password))
+                            AlertWarning.showAlert(RegisterActivity.this, "Fail", "Password has at least 6 character");
                     }
                 }
             }

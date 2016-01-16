@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hackaton Trip</string>
+
+    <!--Login-->
+    <string name="login_username_hint">Your email...</string>
+    <string name="login_password_hint">Password...</string>
+
 </resources>

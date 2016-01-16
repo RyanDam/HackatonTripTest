@@ -6,14 +6,22 @@
     </shared>
   </component>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   <component name="ChangeListManager">
     <list default="true" id="038d78bf-f640-47c6-812b-5658ff3b5d6d" name="Default" comment="" />
 =======
+>>>>>>> refs/remotes/origin/master
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="038d78bf-f640-47c6-812b-5658ff3b5d6d" name="Default" comment="" />
+=======
+=======
+>>>>>>> refs/remotes/origin/master
     <list default="true" id="d0f6fed2-4168-4ab8-bf21-ebe59b67b7e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
@@ -27,9 +35,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 =======
     <list default="true" id="16e40adc-35d4-4dc4-9066-48d9801d86b8" name="Default" comment="" />
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
     <ignored path="HackatonTripTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,11 +70,14 @@
     <leaf>
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
       <file leaf-file-name="activity_register.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
           <provider editor-type-id="text-editor">
 =======
 =======
+>>>>>>> refs/remotes/origin/master
       <file leaf-file-name="RegisterActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -82,9 +97,14 @@
 >>>>>>> master
             <state vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+=======
+<<<<<<< HEAD
               <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+>>>>>>> refs/remotes/origin/master
               <folding>
                 <element signature="e#1456#1600#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +130,8 @@
       <file leaf-file-name="VoiceCall.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/VoiceCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8565841">
-              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.28827038">
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1921#1922#0" expanded="true" />
@@ -127,6 +147,16 @@
                 <element signature="e#2935#2936#0" expanded="true" />
                 <element signature="e#2982#2983#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -243,6 +273,10 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/master
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer">
@@ -250,6 +284,35 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="InComingCallActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/InComingCallActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#910#1220#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
+                <element signature="e#1261#1438#0" expanded="true" />
+                <element signature="e#1437#1438#0" expanded="true" />
+                <element signature="e#1479#1652#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+>>>>>>> refs/remotes/origin/master
+            </state>
+          </provider>
+        </entry>
+      </file>
+=======
+>>>>>>> refs/remotes/origin/master
     </leaf>
   </component>
 <<<<<<< HEAD
@@ -259,6 +322,13 @@
         <option value="Class" />
       </list>
     </option>
+<<<<<<< HEAD
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/master
   </component>
 =======
 >>>>>>> master
@@ -1468,6 +1538,12 @@
       <map>
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <entry key="D:\Document\Workspace\HackatonTripTest" value="4358812750318" />
+=======
+        <entry key="$PROJECT_DIR$" value="4358808235000" />
+>>>>>>> refs/remotes/origin/master
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="4358808978000" />
 =======
@@ -1480,6 +1556,7 @@
         <entry key="$PROJECT_DIR$" value="4358808978000" />
         <entry key="D:\AndroidStudio\HackatonTripTest" value="4358845116583" />
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1710,7 +1787,11 @@
 =======
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1950,7 +2031,11 @@
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-testing-native-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/gradle-tooling-api-builders-2.8.jar" />
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/lib/plugins/ivy-2.2.0.jar" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1969,6 +2054,15 @@
       <list>
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/ShowActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_in_coming_call.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/InComingCallActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/VoiceCall.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
@@ -1980,6 +2074,9 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_show.xml" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 =======
         <option value="$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/ShowActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_in_coming_call.xml" />
@@ -1990,6 +2087,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_favotite.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/FavotiteActivity.java" />
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
       </list>
     </option>
   </component>
@@ -1998,14 +2096,23 @@
   </component>
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="x" value="38" />
+    <option name="y" value="22" />
+=======
     <option name="x" value="259" />
     <option name="y" value="16" />
+>>>>>>> refs/remotes/origin/master
     <option name="width" value="1840" />
     <option name="height" value="990" />
 =======
     <option name="width" value="1280" />
     <option name="height" value="800" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2032,8 +2139,22 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
       <pane id="PackagesPane" />
+>>>>>>> refs/remotes/origin/master
       <pane id="ProjectPane">
 =======
 =======
@@ -2049,12 +2170,26 @@
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="HackatonTripTest" />
+<<<<<<< HEAD
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+=======
+=======
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
 <<<<<<< HEAD
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+>>>>>>> refs/remotes/origin/master
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -2063,6 +2198,8 @@
               <option name="myItemId" value="HackatonTripTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2073,6 +2210,24 @@
               <option name="myItemId" value="HackatonTripTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2087,6 +2242,13 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2125,6 +2287,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+>>>>>>> refs/remotes/origin/master
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2141,6 +2311,8 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -2153,6 +2325,14 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2171,72 +2351,67 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+=======
+              <option name="myItemId" value="jniLibs" />
+>>>>>>> refs/remotes/origin/master
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="libs" />
+=======
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackatonTripTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackatonTripTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jniLibs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackatonTripTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackatonTripTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
+>>>>>>> refs/remotes/origin/master
+=======
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hackatontrip" />
+>>>>>>> refs/remotes/origin/master
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2254,6 +2429,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="build" />
+=======
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2266,6 +2444,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+              <option name="myItemId" value="drawable" />
+>>>>>>> refs/remotes/origin/master
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+<<<<<<< HEAD
+=======
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackatonTripTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+=======
               <option name="myItemId" value="hackatontrip" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2278,9 +2474,19 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="HackatonTripTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+>>>>>>> refs/remotes/origin/master
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="HackatonTripTest" />
+<<<<<<< HEAD
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+=======
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -2290,21 +2496,47 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+>>>>>>> refs/remotes/origin/master
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
       <pane id="PackagesPane" />
+>>>>>>> refs/remotes/origin/master
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/master
     <property name="recentsLimit" value="5" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="BH909ZPU0G" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_23_x86" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.rstudio.hackatontrip.controller" />
     </key>
+<<<<<<< HEAD
+=======
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="BH909ZPU0G" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="low_device" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+  </component>
+  <component name="RecentsManager">
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> refs/remotes/origin/master
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Document\Workspace\HackatonTripTest\app\src\main\jniLibs" />
     </key>
@@ -2312,6 +2544,67 @@
       <recent name="D:\Document\Workspace\HackatonTripTest\app\src\main\jniLibs" />
       <recent name="D:\Document\Workspace\HackatonTripTest\app\libs" />
     </key>
+<<<<<<< HEAD
+  </component>
+  <component name="RunManager" selected="Android Application.app">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+<<<<<<< HEAD
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+=======
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+>>>>>>> refs/remotes/origin/master
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+<<<<<<< HEAD
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+=======
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+>>>>>>> refs/remotes/origin/master
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+<<<<<<< HEAD
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+=======
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+>>>>>>> refs/remotes/origin/master
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+<<<<<<< HEAD
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+=======
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+>>>>>>> refs/remotes/origin/master
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+=======
 =======
             </PATH_ELEMENT>
           </PATH>
@@ -2587,6 +2880,7 @@
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+>>>>>>> refs/remotes/origin/master
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2681,18 +2975,31 @@
 <<<<<<< HEAD
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
 =======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+=======
+>>>>>>> refs/remotes/origin/master
 =======
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+<<<<<<< HEAD
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> master
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+>>>>>>> refs/remotes/origin/master
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -2729,14 +3036,26 @@
       <changelist id="16e40adc-35d4-4dc4-9066-48d9801d86b8" name="Default" comment="" />
       <created>1452946431433</created>
       <option name="number" value="Default" />
+<<<<<<< HEAD
+      <updated>1452933808469</updated>
+>>>>>>> refs/remotes/origin/master
+=======
       <updated>1452946431433</updated>
 >>>>>>> master
+>>>>>>> refs/remotes/origin/master
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+    <frame x="38" y="22" width="1840" height="990" extended-state="1" />
+=======
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+>>>>>>> refs/remotes/origin/master
+=======
     <frame x="259" y="16" width="1840" height="990" extended-state="1" />
+>>>>>>> refs/remotes/origin/master
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2746,18 +3065,40 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> refs/remotes/origin/master
+=======
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> refs/remotes/origin/master
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.49253732" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> refs/remotes/origin/master
+=======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> refs/remotes/origin/master
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5074627" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2858,6 +3199,9 @@
   <component name="editorHistoryManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/RegisterActivity.java">
+=======
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2903,6 +3247,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml">
+>>>>>>> refs/remotes/origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
@@ -2927,6 +3272,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.19911504">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="28" />
+=======
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
@@ -2937,6 +3286,7 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+>>>>>>> refs/remotes/origin/master
           <folding />
         </state>
       </provider>
@@ -2944,6 +3294,9 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_favotite.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2958,15 +3311,16 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/ShowActivity.java">
+>>>>>>> refs/remotes/origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="e#1456#1600#0" expanded="true" />
-          </folding>
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+>>>>>>> refs/remotes/origin/master
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_show.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -3127,7 +3481,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/InComingCallActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#910#1220#0" expanded="true" />
             <element signature="e#1219#1220#0" expanded="true" />
@@ -3139,10 +3493,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/ShowActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#1456#1600#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/VoiceCall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8565841">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.28827038">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1921#1922#0" expanded="true" />
@@ -3157,6 +3530,9 @@
             <element signature="e#2865#2866#0" expanded="true" />
             <element signature="e#2935#2936#0" expanded="true" />
             <element signature="e#2982#2983#0" expanded="true" />
+<<<<<<< HEAD
+=======
+=======
           </folding>
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rstudio/hackatontrip/controller/ShowActivity.java">
@@ -3167,6 +3543,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> refs/remotes/origin/master
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_favotite.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3214,10 +3591,18 @@
         <state vertical-scroll-proportion="0.23971377">
           <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
           <folding>
+<<<<<<< HEAD
+            <element signature="e#328#361#0" expanded="true" />
+            <element signature="e#386#421#0" expanded="true" />
+            <element signature="e#447#482#0" expanded="true" />
+            <element signature="e#506#539#0" expanded="true" />
+>>>>>>> refs/remotes/origin/master
+=======
             <element signature="e#3291#3900#0" expanded="true" />
             <element signature="e#3899#3900#0" expanded="true" />
             <element signature="e#3965#3966#0" expanded="true" />
             <element signature="e#4009#4010#0" expanded="true" />
+>>>>>>> refs/remotes/origin/master
           </folding>
 >>>>>>> master
 =======

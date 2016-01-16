@@ -60,7 +60,6 @@ public class RegisterActivity extends AppCompatActivity {
                             @Override
                             public void done(List<ParseUser> objects, ParseException e) {
                                 if (objects.size() == 0) {
-                                    Log.d("SIZE", objects.size() + "");
                                     Intent intent = new Intent(RegisterActivity.this, ConfirmPass.class);
                                     // package username and password
                                     Bundle bundle = new Bundle();

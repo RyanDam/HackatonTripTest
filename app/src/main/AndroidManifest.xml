@@ -12,7 +12,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".controller.LoginActivity" >
+=======
+        <activity
+            android:name=".controller.LoginActivity"
+            android:screenOrientation="portrait">
+>>>>>>> origin/master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,8 +35,11 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".controller.ConfirmPass"
             android:screenOrientation="portrait"></activity>
+<<<<<<< HEAD
         <activity android:name=".controller.InComingCallActivity" >
         </activity>
+=======
+>>>>>>> origin/master
     </application>
 
 </manifest>

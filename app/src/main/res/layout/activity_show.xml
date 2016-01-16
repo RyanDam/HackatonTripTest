@@ -4,10 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.rstudio.hackatontrip.controller.ShowActivity">
 
 
@@ -16,23 +12,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:background="#1e2734">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/main_toolbar">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
 
         <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="4dp"
-            android:layout_gravity="center_horizontal"
             android:elevation="2dp"
-            android:padding="4dp">
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:id="@+id/main_img"
-                android:src="@drawable/ic_launcher" />
+            android:padding="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+            <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:id="@+id/main_img"
+                    android:src="@drawable/ic_launcher"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal" />
+            </FrameLayout>
         </android.support.v7.widget.CardView>
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -41,18 +57,20 @@
             android:layout_gravity="center_horizontal">
 
             <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
                 android:text="OK"
-                android:id="@+id/ok_bt" />
+                android:id="@+id/ok_bt"
+                android:background="@drawable/button_green"
+                android:layout_margin="8dp" />
 
             <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
                 android:text="NEXT"
-                android:id="@+id/next_bt" />
+                android:id="@+id/next_bt"
+                android:background="@drawable/button_red"
+                android:layout_margin="8dp" />
         </LinearLayout>
 
     </LinearLayout>

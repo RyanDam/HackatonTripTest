@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.rstudio.hackatontrip">
 
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -23,6 +30,7 @@
         </activity>
         <activity
             android:name=".controller.ShowActivity"
+<<<<<<< HEAD
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeMain" />
         <activity
@@ -35,6 +43,22 @@
             android:name=".controller.ConfirmPass"
             android:screenOrientation="portrait" />
         <activity android:name=".controller.UserActivity"></activity>
+=======
+            android:theme="@style/AppThemeMain"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".controller.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".controller.FavotiteActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".controller.ConfirmPass"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".controller.InComingCallActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".controller.CallingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+>>>>>>> master
     </application>
 
 </manifest>

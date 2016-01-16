@@ -51,10 +51,11 @@
             android:text="Let me in"
             android:id="@+id/login_bt"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/button_green"
+            android:background="@drawable/button_red"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -71,4 +71,10 @@ public class ShowActivity extends AppCompatActivity {
         call.callUser(recipientId);
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+        System.exit(0);
+    }
+
 }

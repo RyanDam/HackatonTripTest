@@ -9,6 +9,10 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+<<<<<<< HEAD
+=======
+      <root url="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1-sources.jar!/" />
+>>>>>>> refs/remotes/origin/master
       <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1-sources.jar!/" />
     </SOURCES>
   </library>

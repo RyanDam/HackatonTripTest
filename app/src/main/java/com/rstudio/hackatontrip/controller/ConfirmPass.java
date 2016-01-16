@@ -5,12 +5,11 @@ import android.os.Bundle;
 
 import com.rstudio.hackatontrip.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class ConfirmPass extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
+        setContentView(R.layout.activity_confirm_pass);
     }
 }

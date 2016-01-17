@@ -30,6 +30,8 @@ public class ShowActivity extends AppCompatActivity {
 
     public static final int CALL_CODE = 5646;
     public static final int HANGUP_CODE = 2232;
+    public static final String KEY_RECIPIENTID = "Recipient_ID";
+
     private ImageView mainImg;
     private String userId;
     private VoiceCall voiceCall;
@@ -104,14 +106,13 @@ public class ShowActivity extends AppCompatActivity {
         voiceCall.callUser(recipientId);
     }
 
-<<<<<<< HEAD
+
     @Override
     public void onBackPressed() {
         finish();
         System.exit(0);
     }
 
-=======
 
     public class VoiceCall{
         private Call call;
@@ -148,9 +149,12 @@ public class ShowActivity extends AppCompatActivity {
                     //call.answer();
 
                     InComingCallActivity.call = call;
+                    String recipientId = incomingCall.getRemoteUserId();
+                    Intent intent = new Intent(context,InComingCallActivity.class);
+                    intent.putExtra(ShowActivity.KEY_RECIPIENTID,recipientId);
 
                     // InComingCallActivity.voiceCall = voiceCall;
-                    startActivity(new Intent(context, InComingCallActivity.class));
+                    startActivity(intent);
                 }
             });
         }
@@ -164,6 +168,9 @@ public class ShowActivity extends AppCompatActivity {
             CallingActivity.call = call;
 
             Intent intent = new Intent(context,CallingActivity.class);
+            intent.putExtra(KEY_RECIPIENTID,recipientId);
+
+
             startActivityForResult(intent, CALL_CODE);
         }
     }
@@ -176,5 +183,4 @@ public class ShowActivity extends AppCompatActivity {
                     break;
         }
     }
->>>>>>> origin/An
 }

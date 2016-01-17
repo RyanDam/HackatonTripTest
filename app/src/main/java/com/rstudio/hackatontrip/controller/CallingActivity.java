@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.rstudio.hackatontrip.R;
 import com.sinch.android.rtc.PushPair;
@@ -23,6 +24,24 @@ public class CallingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calling);
+
+        String recipientId = getIntent().getStringExtra(ShowActivity.KEY_RECIPIENTID);
+        final TextView txt = (TextView) findViewById(R.id.textView_UserId);
+        if (txt != null){
+            txt.setText(recipientId);
+        }
+
+        /*
+        ParseQuery<ParseUser> query = ParseQuery.getQuery(ParseUser.class);
+        query.getInBackground(recipientId, new GetCallback<ParseUser>() {
+            @Override
+            public void done(ParseUser object, ParseException e) {
+                final TextView txt = (TextView) findViewById(R.id.textView_UserId);
+                if (txt != null){
+                    txt.setText(object.getEmail());
+                }
+            }
+        });*/
 
         final Button btnHangup = (Button) findViewById(R.id.btnHangup);
         btnHangup.setOnClickListener(new View.OnClickListener() {

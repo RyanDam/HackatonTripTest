@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.rstudio.hackatontrip.R;
 import com.sinch.android.rtc.PushPair;
@@ -27,6 +28,13 @@ public class InComingCallActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_coming_call);
+
+        String recipientId = getIntent().getStringExtra(ShowActivity.KEY_RECIPIENTID);
+
+        final TextView txt = (TextView) findViewById(R.id.textView_UserId);
+        if (txt != null){
+            txt.setText(recipientId);
+        }
 
         call.addCallListener(new CallListener() {
             @Override

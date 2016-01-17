@@ -31,18 +31,6 @@ public class CallingActivity extends AppCompatActivity {
             txt.setText(recipientId);
         }
 
-        /*
-        ParseQuery<ParseUser> query = ParseQuery.getQuery(ParseUser.class);
-        query.getInBackground(recipientId, new GetCallback<ParseUser>() {
-            @Override
-            public void done(ParseUser object, ParseException e) {
-                final TextView txt = (TextView) findViewById(R.id.textView_UserId);
-                if (txt != null){
-                    txt.setText(object.getEmail());
-                }
-            }
-        });*/
-
         final Button btnHangup = (Button) findViewById(R.id.btnHangup);
         btnHangup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +39,6 @@ public class CallingActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
         call.addCallListener(new CallListener() {
             public void onCallProgressing(Call call) {

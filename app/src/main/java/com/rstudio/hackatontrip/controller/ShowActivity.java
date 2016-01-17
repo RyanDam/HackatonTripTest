@@ -93,8 +93,6 @@ public class ShowActivity extends AppCompatActivity {
         user.put(KEY_ONLINE, true);
         user.saveInBackground();
 
-        userId = "xyz";
-
         voiceCall = new VoiceCall(userId, this);
 
         setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);

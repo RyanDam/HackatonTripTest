@@ -48,12 +48,19 @@ public class CallingActivity extends AppCompatActivity {
             @Override
             public void onCallEstablished(Call call) {
                 Log.d("test", "call Establish");
+
+                AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                //audioManager.setSpeakerphoneOn(true);
+                if (audioManager.isMicrophoneMute())
                 setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+
             }
 
             @Override
             public void onCallEnded(Call endCall) {
                 Log.d("test", "call end");
+                //AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                //audioManager.setSpeakerphoneOn(false);
                 setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
                 setResult(3487);
                 finish();
@@ -64,5 +71,22 @@ public class CallingActivity extends AppCompatActivity {
             }
         });
 
+
+        final Button btnSpeakerPhone = (Button) findViewById(R.id.btnSpeakerPhone);
+        btnSpeakerPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                if (audioManager.isSpeakerphoneOn()){
+                    audioManager.setSpeakerphoneOn(false);
+                    btnSpeakerPhone.setText("TURN ON SPEAKER PHONE");
+                }else{
+                    audioManager.setSpeakerphoneOn(true);
+                    btnSpeakerPhone.setText("TURN OFF SPEAKER PHONE");
+                }
+            }
+        });
+
     }
+
 }

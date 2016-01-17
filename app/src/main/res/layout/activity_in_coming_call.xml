@@ -91,8 +91,20 @@
         android:layout_height="@dimen/button_height"
         android:text="HANG UP"
         android:id="@+id/button_hangup"
+<<<<<<< HEAD
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TURN ON SPEAKER PHONE"
+        android:id="@+id/btnSpeakerPhone"
+        android:layout_gravity="center_horizontal" />
+=======
         android:layout_gravity="center_horizontal"
         android:background="@drawable/button_red"
         android:layout_margin="8dp" />
 
+>>>>>>> master
 </LinearLayout>

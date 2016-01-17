@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#1e2734</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
 
     <!--Login-->
-    <color name="color_mask_login">#a0001b2b</color>
+    <color name="color_mask_login">#a0000e16</color>
     <color name="color_text_description">#ffffff</color>
     <color name="color_text_login">#fc558c</color>
     <color name="color_hint_login">#ff8ab1</color>
@@ -15,5 +15,12 @@
     <color name="color_new_accout">#1fff8f</color>
 
     <color name="color_text_favo">#ffffff</color>
-    
+
+    <color name="button_semi_normal">#00ffffff</color>
+    <color name="button_semi_pressed">#20ffffff</color>
+
+    <!--Show Activity-->
+    <color name="color_back_card">#48ffffff</color>
+    <color name="primary_text_default_material_light">#deffffff</color>
+
 </resources>

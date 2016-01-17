@@ -24,12 +24,15 @@
         android:layout_height="match_parent"
         android:gravity="center">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top">
-
-        </RelativeLayout>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Choose your habits:"
+            android:id="@+id/textView3"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/color_text_favo"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -44,8 +47,13 @@
 
                 <Button
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
                     android:text="Boy Handsome"
+=======
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Male"
+>>>>>>> master
                     android:id="@+id/btnMale"
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
@@ -54,18 +62,24 @@
 
                 <Button
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
                     android:text="Old"
                     android:id="@+id/btnOld"
                     android:layout_below="@+id/btnYoung"
                     android:layout_alignParentLeft="true"
+=======
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Female"
+                    android:id="@+id/btnFemale"
+>>>>>>> master
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
                     android:layout_margin="4dp"/>
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Third Gender"
                     android:id="@+id/btnThirdGender"
                     android:background="@drawable/favo_not_select"
@@ -84,7 +98,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="MiddleAge"
                     android:id="@+id/btnMidAge"
                     android:layout_alignTop="@+id/btnFemale"
@@ -94,9 +108,16 @@
 
                 <Button
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
                     android:text="Hot Girl"
                     android:id="@+id/btnFemale"
+=======
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Young"
+                    android:id="@+id/btnYoung"
+                    android:layout_below="@+id/btnThirdGender"
+>>>>>>> master
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
                     android:layout_alignParentTop="true"
@@ -104,10 +125,18 @@
 
                 <Button
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
                     android:text="Young"
                     android:id="@+id/btnYoung"
                     android:layout_below="@+id/btnThirdGender"
+=======
+                    android:layout_height="@dimen/favo_height"
+                    android:text="Old"
+                    android:id="@+id/btnOld"
+                    android:layout_below="@+id/btnYoung"
+                    android:layout_alignParentLeft="true"
+>>>>>>> master
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
                     android:layout_margin="4dp"/>
@@ -122,7 +151,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Science"
                     android:id="@+id/btnScience"
                     android:layout_alignParentStart="true"
@@ -134,7 +163,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Economy"
                     android:id="@+id/btnEconomy"
                     android:layout_alignParentStart="true"
@@ -146,7 +175,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Sad"
                     android:id="@+id/btnSad"
                     android:layout_below="@+id/btnSport"
@@ -164,7 +193,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Food"
                     android:id="@+id/btnFood"
                     android:layout_below="@+id/btnSport"
@@ -174,7 +203,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Sport"
                     android:id="@+id/btnSport"
                     android:layout_below="@+id/btnMidAge"
@@ -184,7 +213,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Education"
                     android:id="@+id/btnEducation"
                     android:layout_below="@+id/btnFemale"
@@ -202,7 +231,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Funny"
                     android:id="@+id/btnFunny"
                     android:layout_below="@+id/btnEconomy"
@@ -212,7 +241,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Ambition"
                     android:id="@+id/btnAmbition"
                     android:layout_alignBaseline="@+id/btnScience"
@@ -223,7 +252,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Chatterbox"
                     android:id="@+id/btnChatterbox"
                     android:layout_below="@+id/btnRed"
@@ -240,7 +269,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Red"
                     android:id="@+id/btnRed"
                     android:layout_below="@+id/btnBlack"
@@ -250,8 +279,13 @@
 
                 <Button
                     android:layout_width="wrap_content"
+<<<<<<< HEAD
                     android:layout_height="wrap_content"
                     android:text="Sky"
+=======
+                    android:layout_height="@dimen/favo_height"
+                    android:text="White"
+>>>>>>> master
                     android:id="@+id/btnWhite"
                     android:layout_above="@+id/btnAmbition"
                     android:background="@drawable/favo_not_select"
@@ -260,7 +294,7 @@
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/favo_height"
                     android:text="Blue"
                     android:id="@+id/btnBlue"
                     android:layout_below="@+id/btnSad"

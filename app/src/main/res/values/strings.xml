@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hackaton Trip</string>
+    <string name="app_name">Surprise</string>
 
     <!--Login-->
     <string name="login_username_hint">Email...</string>

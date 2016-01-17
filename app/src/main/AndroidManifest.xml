@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".controller.AvataActivity" >
+        <activity android:name=".controller.AvataActivity"/>
         <activity
             android:name=".controller.ShowActivity"
             android:screenOrientation="portrait"
@@ -40,20 +40,27 @@
         <activity
             android:name=".controller.RegisterActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".controller.FavotiteActivity"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".controller.ConfirmPass"
             android:screenOrientation="portrait" />
-        <activity android:name=".controller.UserActivity"></activity>
+
+        <activity android:name=".controller.UserActivity"
+            android:screenOrientation="portrait"></activity>
+
         <activity
             android:name=".controller.InComingCallActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".controller.CallingActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".controller.QRScanActivity"></activity>
+
+        <activity android:name=".controller.QRScanActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -108,20 +108,28 @@ public class FavotiteActivity extends AppCompatActivity {
         ParseUser u = ParseUser.getCurrentUser();
         u.put("favorites",getFinalData());
         u.saveInBackground();
-        startActivity(new Intent(this, ShowActivity.class));
+        startActivityForResult(new Intent(this, ShowActivity.class), ShowActivity.USER_CODE);
     }
 
     public String getFinalData() {
         String up="";
         for (int i=0; i<_array.size(); i++){
 
-<<<<<<< HEAD
             up=up+_array.get(i).toLowerCase()+";";
-=======
-            up=up+_array.get(i)+";";
->>>>>>> master
         }
         return up;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case ShowActivity.USER_CODE:
+                if (ShowActivity.LOGOUT_CODE == resultCode) {
+                    setResult(ShowActivity.LOGOUT_CODE);
+                    finish();
+                }
+                break;
+        }
     }
 
 }

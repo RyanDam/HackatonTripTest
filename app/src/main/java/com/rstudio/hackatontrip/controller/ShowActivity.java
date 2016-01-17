@@ -303,7 +303,10 @@ public class ShowActivity extends AppCompatActivity {
                 if (HANGUP_CODE == resultCode) mCall.hangup();
                 break;
             case USER_CODE:
-                if (LOGOUT_CODE == resultCode) finish();
+                if (LOGOUT_CODE == resultCode) {
+                    setResult(LOGOUT_CODE);
+                    finish();
+                }
                 break;
             case QR_CODE:
                 if (QR_RESULT == resultCode) {

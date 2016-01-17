@@ -62,9 +62,8 @@ public class LoginActivity extends AppCompatActivity {
                             if (user != null) {
                                 // start StartActivity when login done
                                 Intent intent = new Intent(LoginActivity.this, ShowActivity.class);
-                                startActivity(intent);
+                                startActivityForResult(intent, SHOW_CODE);
                                 Log.d("LOGIN", "done");
-                                finishFromChild(LoginActivity.this);
                             } else {
                                 AlertWarning.showAlert(LoginActivity.this, "Fail", "Invalid username/password");
                             }
@@ -79,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivityForResult(intent, REGIST_CODE);
+                startActivity(intent);
             }
         });
     }

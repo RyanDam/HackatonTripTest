@@ -54,10 +54,10 @@ public class ShowActivity extends AppCompatActivity {
         ParseUser user = ParseUser.getCurrentUser();
         userId = user.getObjectId();
 
+        userId = "xyz";
+
         user.put(KEY_ONLINE,true);
         user.saveInBackground();
-
-        userId = "xyz";
 
         voiceCall = new VoiceCall(userId,this);
 

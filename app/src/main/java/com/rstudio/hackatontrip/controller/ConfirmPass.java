@@ -49,7 +49,7 @@ public class ConfirmPass extends AppCompatActivity {
                     User user = new User();
                     user.setUsername(username);
                     user.setPassword(password);
-
+                    user.put("name", username.split("@")[0]);
                     user.signUpInBackground(new SignUpCallback() {
                         public void done(ParseException e) {
                             if (e == null) {

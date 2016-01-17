@@ -21,5 +21,6 @@
 
     <!--Show Activity-->
     <color name="color_back_card">#48ffffff</color>
+    <color name="primary_text_default_material_light">#deffffff</color>
 
 </resources>

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.parse.FindCallback;
 import com.parse.FunctionCallback;
@@ -46,6 +47,11 @@ import java.util.Objects;
 
 public class ShowActivity extends AppCompatActivity {
 
+    public static final int CALL_CODE = 5646;
+    public static final int HANGUP_CODE = 2232;
+    public static final int LOGOUT_CODE = 1241;
+    public static final int USER_CODE = 14124;
+
     private Context mContext;
 
     private ImageView mainImg;
@@ -54,10 +60,9 @@ public class ShowActivity extends AppCompatActivity {
     private VoiceCall call;
     private ProgressBar mainProgess;
     private ArrayList<String> previousUser;
-    public static final int CALL_CODE = 5646;
-    public static final int HANGUP_CODE = 2232;
     private String userId;
     private VoiceCall voiceCall;
+    private TextView targetName;
     List<String> listRecentCall;
 
     public void setmCall(Call mCall) {
@@ -77,24 +82,22 @@ public class ShowActivity extends AppCompatActivity {
         mContext = this;
 
         previousUser = new ArrayList<>();
-
         currentUser = ParseUser.getCurrentUser();
-
         userId = currentUser.getObjectId();
-
         listRecentCall = new ArrayList<String>();
         ParseUser user = ParseUser.getCurrentUser();
         userId = user.getObjectId();
 
-        user.put(KEY_ONLINE,true);
+        user.put(KEY_ONLINE, true);
         user.saveInBackground();
 
         userId = "xyz";
 
-        voiceCall = new VoiceCall(userId,this);
+        voiceCall = new VoiceCall(userId, this);
 
         setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
 
+        targetName = (TextView) findViewById(R.id.main_name);
         mainImg = (ImageView) findViewById(R.id.main_img);
         mainImg.setOnTouchListener(new OnSwipeListener(this) {
             public void onSwipeRight() {
@@ -105,6 +108,7 @@ public class ShowActivity extends AppCompatActivity {
                 nextUser();
             }
         });
+
         Button okBt = (Button) findViewById(R.id.ok_bt);
         Button nextBt = (Button) findViewById(R.id.next_bt);
         okBt.setOnClickListener(new View.OnClickListener() {
@@ -127,9 +131,12 @@ public class ShowActivity extends AppCompatActivity {
         userBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(mContext, UserActivity.class));
+                startActivityForResult(new Intent(mContext, UserActivity.class), USER_CODE);
             }
         });
+
+        currentUser.put("isOnline", true);
+        currentUser.saveInBackground();
 
         nextUser();
     }
@@ -142,14 +149,17 @@ public class ShowActivity extends AppCompatActivity {
         Log.d("USEr", "nextUser");
 
         HashMap<String, Object> params = new HashMap<>();
-        params.put("code", userId);
+        params.put("code", ParseUser.getCurrentUser().getObjectId());
         params.put("recentChoose", previousUser);
         ParseCloud.callFunctionInBackground("ramdomUser", params, new FunctionCallback<String>() {
             @Override
             public void done(String object, ParseException e) {
                 if (null == e) {
                     setTargetUser("" + object);
-                } else Log.d("USEr", "nextUser " + "fails");
+                } else {
+                    Log.d("USEr", "nextUser " + "fails");
+                    e.printStackTrace();
+                }
             }
         });
     }
@@ -176,21 +186,28 @@ public class ShowActivity extends AppCompatActivity {
         Log.d("Current Target", "" + u.getObjectId());
         ParseFile img = (ParseFile) u.get("avatar");
         userId = u.getObjectId();
-        voiceCall = new VoiceCall(userId,this);
-        img.getDataInBackground(new GetDataCallback() {
-            @Override
-            public void done(byte[] data, ParseException e) {
-                mainImg.setImageBitmap(UserUtils.getBitmapFromBytes(data));
-            }
-        }, new ProgressCallback() {
-            @Override
-            public void done(Integer percentDone) {
-                Log.d("Load img", "" + percentDone + "/100");
-                if (percentDone == 0) mainProgess.setVisibility(View.VISIBLE);
-                else if (percentDone == 100) mainProgess.setVisibility(View.GONE);
-                mainProgess.setProgress(percentDone);
-            }
-        });
+        voiceCall = new VoiceCall(userId, this);
+        if (null != img) {
+            img.getDataInBackground(new GetDataCallback() {
+                @Override
+                public void done(byte[] data, ParseException e) {
+                    mainImg.setImageBitmap(UserUtils.getBitmapFromBytes(data));
+                }
+            }, new ProgressCallback() {
+                @Override
+                public void done(Integer percentDone) {
+                    Log.d("Load img", "" + percentDone + "/100");
+                    if (percentDone < 20
+                            && mainProgess.getVisibility() == View.GONE)
+                        mainProgess.setVisibility(View.VISIBLE);
+                    else if (percentDone == 100
+                            && mainProgess.getVisibility() == View.VISIBLE)
+                        mainProgess.setVisibility(View.GONE);
+                    mainProgess.setProgress(percentDone);
+                }
+            });
+        }
+        targetName.setText((String) currentTargetUser.get("name"));
     }
 
     private void makeACall() {
@@ -205,7 +222,7 @@ public class ShowActivity extends AppCompatActivity {
         finish();
     }
 
-    public class VoiceCall{
+    public class VoiceCall {
         private Call call;
         private SinchClient sinchClient;
         ShowActivity context;
@@ -214,11 +231,11 @@ public class ShowActivity extends AppCompatActivity {
         public static final String APP_SECRET = "+3vdCTyJVEGmBPwFSkJF+g==";
         public static final String HOST = "sandbox.sinch.com";
 
-        public Call getCall(){
+        public Call getCall() {
             return call;
         }
 
-        public VoiceCall(String userId, final ShowActivity context){
+        public VoiceCall(String userId, final ShowActivity context) {
             this.context = context;
             sinchClient = Sinch.getSinchClientBuilder()
                     .context(context)
@@ -247,7 +264,7 @@ public class ShowActivity extends AppCompatActivity {
             });
         }
 
-        public void callUser(String recipientId){
+        public void callUser(String recipientId) {
             call = sinchClient.getCallClient().callUser(recipientId);
             Log.d("test", "calling");
 
@@ -255,9 +272,16 @@ public class ShowActivity extends AppCompatActivity {
 
             CallingActivity.call = call;
 
-            Intent intent = new Intent(context,CallingActivity.class);
+            Intent intent = new Intent(context, CallingActivity.class);
             startActivityForResult(intent, CALL_CODE);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        currentUser.put("isOnline", false);
+        currentUser.saveInBackground();
+        super.onDestroy();
     }
 
     @Override
@@ -265,7 +289,10 @@ public class ShowActivity extends AppCompatActivity {
         switch (requestCode) {
             case CALL_CODE:
                 if (HANGUP_CODE == resultCode) mCall.hangup();
-                    break;
+                break;
+            case USER_CODE:
+                if (LOGOUT_CODE == resultCode) finish();
+                break;
         }
     }
 }

@@ -62,7 +62,6 @@
                     android:id="@+id/btnFemale"
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
-                    android:layout_alignParentTop="true"
                     android:layout_margin="4dp"/>
 
                 <Button
@@ -102,7 +101,8 @@
                     android:layout_below="@+id/btnThirdGender"
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
-                    android:layout_margin="4dp"/>
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="4dp" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -114,6 +114,7 @@
                     android:background="@drawable/favo_not_select"
                     android:textColor="@color/color_text_favo"
                     android:layout_margin="4dp"/>
+
             </LinearLayout>
 
             <LinearLayout

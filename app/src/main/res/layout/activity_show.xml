@@ -26,9 +26,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:id="@+id/main_toolbar"
-                    android:layout_toLeftOf="@+id/accout_bt"
-                    android:layout_toStartOf="@+id/accout_bt"
-                    app:titleTextColor="#ffffff">
+                    android:layout_toStartOf="@+id/scan"
+                    app:titleTextColor="#ffffff"
+                    android:layout_toLeftOf="@+id/scan">
                 </android.support.v7.widget.Toolbar>
                 <ImageButton
                     android:layout_width="?attr/actionBarSize"
@@ -37,6 +37,15 @@
                     android:layout_alignParentRight="true"
                     android:src="@android:drawable/ic_menu_info_details"
                     android:background="@drawable/button_semi" />
+                <ImageButton
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/scan"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:background="@drawable/button_semi"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/accout_bt"
+                    android:layout_toStartOf="@+id/accout_bt" />
             </RelativeLayout>
 
         </android.support.design.widget.AppBarLayout>
@@ -113,7 +122,8 @@
                 android:text="Call"
                 android:id="@+id/ok_bt"
                 android:background="@drawable/button_green"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp"
+                android:textColor="#90000000" />
 
             <Button
                 android:layout_width="150dp"
@@ -121,7 +131,8 @@
                 android:text="NEXT"
                 android:id="@+id/next_bt"
                 android:background="@drawable/button_red"
-                android:layout_margin="8dp" />
+                android:layout_margin="8dp"
+                android:textColor="#ffffff" />
         </LinearLayout>
 
     </LinearLayout>

@@ -1,22 +1,16 @@
 package com.rstudio.hackatontrip.controller;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.parse.FindCallback;
-import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
@@ -24,7 +18,6 @@ import com.rstudio.hackatontrip.R;
 import com.rstudio.hackatontrip.model.User;
 import com.rstudio.hackatontrip.utils.AlertWarning;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -48,8 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
                 if (!RegisterActivity.this.checkConnection()) {
                     AlertWarning.showAlert(RegisterActivity.this, "Fail", "Check your connection");
                 } else {
-                    final String username = ((EditText)findViewById(R.id.user_email)).getText().toString();
-                    final String password = ((EditText)findViewById(R.id.user_pass)).getText().toString();
+                    final String username = ((EditText) findViewById(R.id.user_email)).getText().toString();
+                    final String password = ((EditText) findViewById(R.id.user_pass)).getText().toString();
                     if (User.validate(username, password)) {
                         // check email exist
                         ParseQuery<ParseUser> query = User.getQuery();
@@ -59,15 +52,14 @@ public class RegisterActivity extends AppCompatActivity {
                         query.findInBackground(new FindCallback<ParseUser>() {
                             @Override
                             public void done(List<ParseUser> objects, ParseException e) {
-                                if (objects.size() == 0) {
+                                if (objects != null && objects.size() == 0) {
                                     Intent intent = new Intent(RegisterActivity.this, ConfirmPass.class);
                                     // package username and password
                                     Bundle bundle = new Bundle();
                                     bundle.putCharSequence(USERNAME_KEY, username);
                                     bundle.putCharSequence(PASSWORD_KEY, password);
                                     intent.putExtra(BUNDLE_KEY, bundle);
-
-                                    startActivity(intent);
+                                    startActivityForResult(intent, ShowActivity.USER_CODE);
                                 } else {
                                     AlertWarning.showAlert(RegisterActivity.this, "Fail", "Email is exist");
                                 }
@@ -92,5 +84,17 @@ public class RegisterActivity extends AppCompatActivity {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case ShowActivity.USER_CODE:
+                if (ShowActivity.LOGOUT_CODE == resultCode) {
+//                    setResult(LoginActivity.EXIT_CODE);
+                    finish();
+                }
+                break;
+        }
     }
 }

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -39,6 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         init();
+        ParseUser u = ParseUser.getCurrentUser();
+        Log.d("log", "" + (u == null));
     }
 
     protected void init() {
@@ -60,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (user != null) {
                                 // start StartActivity when login done
                                 Intent intent = new Intent(LoginActivity.this, ShowActivity.class);
-                                startActivity(intent);
+                                startActivityForResult(intent, SHOW_CODE);
                                 Log.d("LOGIN", "done");
                             } else {
                                 AlertWarning.showAlert(LoginActivity.this, "Fail", "Invalid username/password");
@@ -76,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivityForResult(intent, REGIST_CODE);
+                startActivity(intent);
             }
         });
     }

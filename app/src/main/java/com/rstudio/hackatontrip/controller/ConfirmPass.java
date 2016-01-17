@@ -54,7 +54,7 @@ public class ConfirmPass extends AppCompatActivity {
                         public void done(ParseException e) {
                             if (e == null) {
                                 Intent intent = new Intent(ConfirmPass.this, FavotiteActivity.class);
-                                startActivity(intent);
+                                startActivityForResult(intent, ShowActivity.USER_CODE);
                             } else {
                                 AlertWarning.showAlert(ConfirmPass.this, "Fail", "Some error occur");
                             }
@@ -65,5 +65,17 @@ public class ConfirmPass extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case ShowActivity.USER_CODE:
+                if (ShowActivity.LOGOUT_CODE == resultCode) {
+                    setResult(ShowActivity.LOGOUT_CODE);
+                    finish();
+                }
+                break;
+        }
     }
 }

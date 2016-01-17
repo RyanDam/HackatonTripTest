@@ -16,7 +16,11 @@
 
     <color name="color_text_favo">#ffffff</color>
 
+    <color name="button_semi_normal">#00ffffff</color>
+    <color name="button_semi_pressed">#20ffffff</color>
+
     <!--Show Activity-->
     <color name="color_back_card">#48ffffff</color>
+    <color name="primary_text_default_material_light">#deffffff</color>
 
 </resources>

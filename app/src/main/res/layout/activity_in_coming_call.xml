@@ -55,4 +55,12 @@
         android:text="HANG UP"
         android:id="@+id/button_hangup"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TURN ON SPEAKER PHONE"
+        android:id="@+id/btnSpeakerPhone"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

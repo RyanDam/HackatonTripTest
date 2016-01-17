@@ -30,6 +30,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnHangup"
         android:text="HANG UP"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpeakerPhone"
+        android:text="TURN ON SPEAKER PHONE"/>
 
 
 </LinearLayout>

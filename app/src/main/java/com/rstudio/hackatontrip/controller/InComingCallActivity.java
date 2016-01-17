@@ -45,13 +45,20 @@ public class InComingCallActivity extends AppCompatActivity {
             @Override
             public void onCallEstablished(Call call) {
                 Log.d("test", "call Establish");
-//                setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
-                setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
+
+                //AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                //audioManager.setSpeakerphoneOn(true);
+                setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+                //setVolumeControlStream(AudioManager.MODE_IN_COMMUNICATION);
+                
+               // audioManager.adjustStreamVolume();
             }
 
             @Override
             public void onCallEnded(Call endCall) {
                 Log.d("test", "call end");
+                //AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                //audioManager.setSpeakerphoneOn(false);
                 setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
                 finish();
             }
@@ -93,6 +100,21 @@ public class InComingCallActivity extends AppCompatActivity {
             public void onClick(View v) {
                 call.hangup();
                 finish();
+            }
+        });
+
+        final Button btnSpeakerPhone = (Button) findViewById(R.id.btnSpeakerPhone);
+        btnSpeakerPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+                if (audioManager.isSpeakerphoneOn()){
+                    audioManager.setSpeakerphoneOn(false);
+                    btnSpeakerPhone.setText("TURN ON SPEAKER PHONE");
+                }else{
+                    audioManager.setSpeakerphoneOn(true);
+                    btnSpeakerPhone.setText("TURN OFF SPEAKER PHONE");
+                }
             }
         });
 

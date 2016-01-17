@@ -1,8 +1,6 @@
 package com.rstudio.hackatontrip.controller;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -13,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -24,6 +21,10 @@ import com.rstudio.hackatontrip.utils.AlertWarning;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static final int EXIT_CODE = 123221;
+    public static final int REGIST_CODE = 35452;
+    public static final int SHOW_CODE = 31413;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         ParseUser user = ParseUser.getCurrentUser();
         if (user != null) {
             Intent intent = new Intent(this, ShowActivity.class);
-            startActivity(intent);
+            startActivityForResult(intent, SHOW_CODE);
             Log.d("LOGIN", "user have logged");
         }
 
@@ -69,12 +70,13 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
         // set litener of register TextView
         registerText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REGIST_CODE);
             }
         });
     }
@@ -87,5 +89,12 @@ public class LoginActivity extends AppCompatActivity {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (EXIT_CODE == resultCode) {
+            finish();
+        }
     }
 }

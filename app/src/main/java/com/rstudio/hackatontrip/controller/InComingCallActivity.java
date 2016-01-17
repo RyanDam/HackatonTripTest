@@ -45,7 +45,8 @@ public class InComingCallActivity extends AppCompatActivity {
             @Override
             public void onCallEstablished(Call call) {
                 Log.d("test", "call Establish");
-                setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+//                setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+                setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
             }
 
             @Override

@@ -49,10 +49,14 @@ public class ShowActivity extends AppCompatActivity {
 
     public static final int CALL_CODE = 5646;
     public static final int HANGUP_CODE = 2232;
+<<<<<<< HEAD
     public static final int LOGOUT_CODE = 1241;
     public static final int USER_CODE = 14124;
 
     private Context mContext;
+=======
+    public static final String KEY_RECIPIENTID = "Recipient_ID";
+>>>>>>> master
 
     private ImageView mainImg;
     private ParseUser currentUser;
@@ -88,12 +92,21 @@ public class ShowActivity extends AppCompatActivity {
         ParseUser user = ParseUser.getCurrentUser();
         userId = user.getObjectId();
 
+<<<<<<< HEAD
         user.put(KEY_ONLINE, true);
         user.saveInBackground();
 
         userId = "xyz";
 
         voiceCall = new VoiceCall(userId, this);
+=======
+        userId = "xyz";
+
+        user.put(KEY_ONLINE,true);
+        user.saveInBackground();
+
+        voiceCall = new VoiceCall(userId,this);
+>>>>>>> master
 
         setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
 
@@ -216,13 +229,22 @@ public class ShowActivity extends AppCompatActivity {
         voiceCall.callUser(recipientId);
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     @Override
     public void onBackPressed() {
         setResult(LoginActivity.EXIT_CODE, new Intent());
         finish();
     }
 
+<<<<<<< HEAD
     public class VoiceCall {
+=======
+
+    public class VoiceCall{
+>>>>>>> master
         private Call call;
         private SinchClient sinchClient;
         ShowActivity context;
@@ -257,9 +279,12 @@ public class ShowActivity extends AppCompatActivity {
                     //call.answer();
 
                     InComingCallActivity.call = call;
+                    String recipientId = incomingCall.getRemoteUserId();
+                    Intent intent = new Intent(context,InComingCallActivity.class);
+                    intent.putExtra(ShowActivity.KEY_RECIPIENTID,recipientId);
 
                     // InComingCallActivity.voiceCall = voiceCall;
-                    startActivity(new Intent(context, InComingCallActivity.class));
+                    startActivity(intent);
                 }
             });
         }
@@ -272,7 +297,14 @@ public class ShowActivity extends AppCompatActivity {
 
             CallingActivity.call = call;
 
+<<<<<<< HEAD
             Intent intent = new Intent(context, CallingActivity.class);
+=======
+            Intent intent = new Intent(context,CallingActivity.class);
+            intent.putExtra(KEY_RECIPIENTID,recipientId);
+
+
+>>>>>>> master
             startActivityForResult(intent, CALL_CODE);
         }
     }

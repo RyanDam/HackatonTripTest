@@ -24,6 +24,16 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/imageView6"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,7 +44,8 @@
             android:textColor="@color/color_text_description"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:layout_margin="8dp" />
+            android:layout_margin="8dp"
+            android:visibility="gone" />
 
         <include
             android:layout_width="fill_parent"

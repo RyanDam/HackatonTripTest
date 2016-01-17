@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.rstudio.hackatontrip.R;
 import com.sinch.android.rtc.PushPair;
 import com.sinch.android.rtc.calling.Call;
@@ -21,6 +25,9 @@ public class InComingCallActivity extends AppCompatActivity {
     private Button btnReject;
     private Button btnHangup;
 
+    private String targetName;
+    TextView txt;
+
     //public static ShowActivity.VoiceCall voiceCall;
     public static Call call;
 
@@ -31,10 +38,18 @@ public class InComingCallActivity extends AppCompatActivity {
 
         String recipientId = getIntent().getStringExtra(ShowActivity.KEY_RECIPIENTID);
 
-        final TextView txt = (TextView) findViewById(R.id.textView_UserId);
-        if (txt != null){
-            txt.setText(recipientId);
-        }
+        txt = (TextView) findViewById(R.id.textView_UserId);
+
+        ParseQuery<ParseUser> u = ParseUser.getQuery();
+        u.getInBackground(recipientId, new GetCallback<ParseUser>() {
+            @Override
+            public void done(ParseUser object, ParseException e) {
+                if (e == null) targetName = (String) object.get("name");
+                if (txt != null){
+                    txt.setText(targetName);
+                }
+            }
+        });
 
         call.addCallListener(new CallListener() {
             @Override

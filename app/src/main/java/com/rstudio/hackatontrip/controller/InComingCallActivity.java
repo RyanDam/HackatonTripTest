@@ -61,14 +61,11 @@ public class InComingCallActivity extends AppCompatActivity {
             }
         });
 
-
         btnHangup = (Button) findViewById(R.id.button_hangup);
         btnHangup.setVisibility(View.INVISIBLE);
         btnReject = (Button) findViewById(R.id.button_reject);
 
-
         btnAnswer = (Button) findViewById(R.id.button_answer);
-
 
         btnAnswer.setOnClickListener(new View.OnClickListener() {
             @Override

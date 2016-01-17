@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.FunctionCallback;
@@ -51,6 +52,8 @@ public class ShowActivity extends AppCompatActivity {
     public static final int HANGUP_CODE = 2232;
     public static final int LOGOUT_CODE = 1241;
     public static final int USER_CODE = 14124;
+    public static final int QR_CODE = 3512;
+    public static final int QR_RESULT = 3534;
     public static final String KEY_RECIPIENTID = "Recipient_ID";
     public static final String KEY_ONLINE = "isOnline";
 
@@ -89,9 +92,6 @@ public class ShowActivity extends AppCompatActivity {
         listRecentCall = new ArrayList<String>();
         ParseUser user = ParseUser.getCurrentUser();
         userId = user.getObjectId();
-
-        user.put(KEY_ONLINE, true);
-        user.saveInBackground();
 
         voiceCall = new VoiceCall(userId, this);
 
@@ -137,6 +137,14 @@ public class ShowActivity extends AppCompatActivity {
 
         currentUser.put("isOnline", true);
         currentUser.saveInBackground();
+
+        ImageButton scan = (ImageButton) findViewById(R.id.scan);
+        scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(mContext, QRScanActivity.class), QR_CODE);
+            }
+        });
 
         nextUser();
     }
@@ -257,8 +265,8 @@ public class ShowActivity extends AppCompatActivity {
 
                     InComingCallActivity.call = call;
                     String recipientId = incomingCall.getRemoteUserId();
-                    Intent intent = new Intent(context,InComingCallActivity.class);
-                    intent.putExtra(ShowActivity.KEY_RECIPIENTID,recipientId);
+                    Intent intent = new Intent(context, InComingCallActivity.class);
+                    intent.putExtra(ShowActivity.KEY_RECIPIENTID, recipientId);
 
                     // InComingCallActivity.voiceCall = voiceCall;
                     startActivity(intent);
@@ -296,6 +304,15 @@ public class ShowActivity extends AppCompatActivity {
                 break;
             case USER_CODE:
                 if (LOGOUT_CODE == resultCode) finish();
+                break;
+            case QR_CODE:
+                if (QR_RESULT == resultCode) {
+                    String ret = data.getStringExtra("result");
+                    Log.d("Scan", ret);
+                    currentUser.put("location", ret);
+                    currentUser.saveInBackground();
+                    Toast.makeText(mContext, "Welcome to " + ret, Toast.LENGTH_LONG).show();
+                }
                 break;
         }
     }

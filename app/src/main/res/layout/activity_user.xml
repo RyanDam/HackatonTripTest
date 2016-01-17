@@ -58,33 +58,50 @@
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
             android:text="Change avatar"
             android:id="@+id/change_avatar_bt"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#90000000"
+            android:background="@drawable/button_green"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
             android:text="Change User name"
             android:id="@+id/change_name_bt"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#90000000"
+            android:background="@drawable/button_green"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
             android:text="Log out"
             android:id="@+id/logout_bt"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_red"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
 
     </LinearLayout>
 </RelativeLayout>

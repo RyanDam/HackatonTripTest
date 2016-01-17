@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,21 +12,51 @@
     tools:context="com.rstudio.hackatontrip.controller.InComingCallActivity"
     android:background="@color/colorPrimary">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView_avatar"
-        android:layout_gravity="center_horizontal"
-        android:src="@android:drawable/sym_def_app_icon"/>
-
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="name"
-        android:id="@+id/textView_UserId"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Incoming Call"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:elevation="8dp"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00ffffff"
+        android:layout_gravity="center_horizontal">
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/imageView_avatar"
+                android:src="@drawable/sample_avatar"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Your name here"
+                android:id="@+id/textView_UserId"
+                android:layout_gravity="left|bottom|center_horizontal"
+                android:textSize="16dp"
+                android:textColor="@color/color_text_description"
+                android:layout_margin="8dp" />
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,24 +68,31 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
             android:text="ANSWER"
-            android:id="@+id/button_answer"/>
+            android:id="@+id/button_answer"
+            android:background="@drawable/button_green"
+            android:layout_margin="8dp"
+            android:textColor="#90000000" />
 
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/button_height"
             android:text="REJECT"
-            android:id="@+id/button_reject"/>
+            android:id="@+id/button_reject"
+            android:background="@drawable/button_red"
+            android:layout_margin="8dp" />
 
     </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_height="@dimen/button_height"
         android:text="HANG UP"
         android:id="@+id/button_hangup"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_red"
+        android:layout_margin="8dp" />
+
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.rstudio.hackatontrip.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -21,19 +22,6 @@ public class FavotiteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favotite);
-
-//        FrameLayout a = new FrameLayout(this);
-//        Button aa = new Button(this);
-//        ViewGroup.LayoutParams layout = new ViewGroup.LayoutParams();
-//        aa.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Button a = (Button) v;
-//                Log.d("TEXT", a.getText().toString());
-//            }
-//        });
-//        a.addView(aa);
-
 
         //initial
         _male = (Button)findViewById(R.id.btnMale);
@@ -106,7 +94,6 @@ public class FavotiteActivity extends AppCompatActivity {
                         changeColor(temp, R.drawable.favo_selected);
                     }
                 }
-
             }
         });
     }
@@ -114,8 +101,6 @@ public class FavotiteActivity extends AppCompatActivity {
     public void changeColor(final Button b1, int id){
         //b1.setBackgroundColor(color);
         b1.setBackgroundResource(id);
-
-
         //b1.setBackground(getResources().getDrawable(R.drawable.favo_selected));
     }
 
@@ -123,6 +108,7 @@ public class FavotiteActivity extends AppCompatActivity {
         ParseUser u = ParseUser.getCurrentUser();
         u.put("favorites",getFinalData());
         u.saveInBackground();
+        startActivity(new Intent(this, ShowActivity.class));
     }
 
     public String getFinalData() {
